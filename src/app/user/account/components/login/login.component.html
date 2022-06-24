@@ -1,0 +1,24 @@
+<div class="wrapper">
+  <h1>Вход</h1>
+  <form class="b-form" [formGroup]="controlsGroup">
+    <div>
+      <tui-input formControlName="mail">
+        Введите почту
+        <input tuiTextfield placeholder="mail@mail.ru" type="mail">
+      </tui-input>
+    </div>
+
+    <div>
+      <tui-input formControlName="password">
+        Введите пароль
+        <input tuiTextfield placeholder="Пароль" type="password">
+      </tui-input>
+    </div>
+
+    <div>
+      <button tuiButton appearance="custom" type="button" (click)="onSubmit()">
+        Войти
+      </button>
+    </div>
+  </form>
+</div>

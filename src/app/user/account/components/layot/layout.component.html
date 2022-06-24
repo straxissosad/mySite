@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="container-actions">
+    <div (click)="currentComponent = 'login'" class="authButton"><h2>Вход</h2></div>
+    <div (click)="currentComponent = 'registration'" class="authButton"><h2>Регистрация</h2></div>
+  </div>
+  <div class="container-center">
+    <ng-container *ngIf="currentComponent == 'registration'">
+      <registration-component></registration-component>
+    </ng-container>
+    <ng-container *ngIf="currentComponent == 'login'">
+      <login-component></login-component>
+    </ng-container>
+  </div>
+</div>

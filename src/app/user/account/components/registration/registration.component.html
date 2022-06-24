@@ -1,0 +1,46 @@
+<div class="wrapper">
+  <h1>Регистрация</h1>
+  <form class="b-form" [formGroup]="controlsGroup">
+    <div class="b-form__input_name">
+      <tui-input formControlName="name">
+        Введите имя
+        <input tuiTextfield placeholder="Иван" type="name">
+      </tui-input>
+    </div>
+
+    <div>
+      <tui-input formControlName="password">
+        Введите пароль
+        <input tuiTextfield placeholder="Пароль" type="password">
+      </tui-input>
+    </div>
+
+    <div>
+      <tui-input formControlName="mail">
+        Введите почту
+        <input tuiTextfield placeholder="mail@mail.ru" type="mail">
+      </tui-input>
+    </div>
+
+    <div>
+      <tui-select
+        formControlName="gender"
+        tuiTextfieldSize="l"
+      >
+        Ваш пол
+        <input tuiTextfield placeholder="Ваш пол">
+        <tui-data-list-wrapper
+          *tuiDataList
+          [items]="genders"
+        >
+        </tui-data-list-wrapper>
+      </tui-select>
+    </div>
+
+    <div>
+      <button tuiButton appearance="custom" type="button" (click)="onSubmit()">
+        Регистрация
+      </button>
+    </div>
+  </form>
+</div>

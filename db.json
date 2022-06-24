@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "name": "Иван",
+      "password": "244370ccc",
+      "mail": "mail@mail.ru",
+      "gender": "Мужской",
+      "id": 1
+    },
+    {
+      "name": "Иван",
+      "password": "244370ccc",
+      "mail": "mail@mail.com",
+      "gender": "Женский",
+      "id": 2
+    }
+  ]
+}

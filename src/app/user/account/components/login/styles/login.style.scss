@@ -1,0 +1,23 @@
+.wrapper {
+  width: 500px;
+  padding: 36px;
+  background: #FFF;
+  border-radius: 15px;
+  box-shadow: 0 0 15px;
+
+  h1 {
+    margin: 0;
+  }
+
+  button{
+    width: 500px;
+  }
+
+  .b-form__input_name{
+    margin-top: 18px;
+  }
+}
+
+.b-form > div {
+  margin:9px 0;
+}
