@@ -30,7 +30,17 @@ export class LoginComponent implements OnInit{
     }, error => alert(error))
   }
 
-  onSubmit() {
-
+  login() {
+    this.userService.getAllUser().subscribe(res =>{
+      const user = res.find((a:IUser) => {
+        return a.mail === this.controlsGroup.value.mail && a.password === this.controlsGroup.value.password
+      });
+      if(user){
+        alert("Login Success")
+        this.controlsGroup.reset();
+      } else {
+        alert("Wrong Password or mail")
+      }
+    }, error => {alert("Something wrong")})
   }
 }
