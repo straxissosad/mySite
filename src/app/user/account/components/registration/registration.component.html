@@ -38,7 +38,7 @@
     </div>
 
     <div>
-      <button tuiButton appearance="custom" type="button" (click)="onSubmit()">
+      <button tuiButton appearance="custom" type="button" (click)="onSubmit()" [disabled]="!controlsGroup.valid">
         Регистрация
       </button>
     </div>
