@@ -10,6 +10,7 @@ import {routes} from "./cabinet.routing";
 import {TuiDataListWrapperModule, TuiInputModule, TuiSelectModule} from "@taiga-ui/kit";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {MainComponent} from "./main/main.component";
+import {CanActivateCabinet} from "./cabinet.guard";
 
 @NgModule({
   declarations: [
@@ -27,10 +28,10 @@ import {MainComponent} from "./main/main.component";
     TuiSelectModule,
     TuiTextfieldControllerModule,
     TuiDataListWrapperModule,
-    TuiButtonModule
+    TuiButtonModule,
   ],
 
-  providers: [HttpClientModule]
+  providers: [HttpClientModule, CanActivateCabinet]
 })
 
 export class UserCabinetModule {}

@@ -13,6 +13,21 @@
       "mail": "mail@mail.com",
       "gender": "Женский",
       "id": 2
+    },
+    {
+      "name": "Никита",
+      "password": "244370ccc",
+      "mail": "skrytyya@gmail.com",
+      "gender": "Женский",
+      "id": 3
+    },
+    {
+      "name": "ivan",
+      "password": "111111",
+      "mail": "mail@mail.com",
+      "gender": "Мужской",
+      "id": 4
     }
-  ]
+  ],
+  "login": []
 }

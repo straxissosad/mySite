@@ -16,7 +16,7 @@
     </div>
 
     <div>
-      <button tuiButton appearance="custom" type="button" (click)="login()">
+      <button tuiButton appearance="custom" type="button" (click)="login()" [disabled]="!controlsGroup.valid">
         Войти
       </button>
     </div>
